@@ -7,7 +7,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 public record FrequencyResponseDTO(
         UUID id,
-        @JsonFormat(pattern = "dd/MM/yyyy") LocalDate data,
+        @JsonFormat(pattern = "dd/MM/yyyy") 
+        LocalDate data,
         Integer quantidadeMembrosHomem,
         Integer quantidadeMembrosMulheres,
         Integer quantidadeVisitantesHomem,
